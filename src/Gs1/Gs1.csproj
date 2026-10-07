@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <IsAotCompatible>true</IsAotCompatible>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PackageId>Gs1.Net</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Israel Iyonsi</Authors>
+    <Description>Correct, zero-dependency parser and builder for GS1 Application Identifier (AI) element strings. Reads the human-readable bracketed form and the GS1-128 / scan form with FNC1 variable-length termination, validates GTIN and SSCC mod-10 check digits, parses YYMMDD dates, and reads and builds GS1 Digital Link URIs. Pure string and arithmetic, deterministic, offline.</Description>
+    <PackageTags>gs1;barcode;gtin;sscc;application-identifier;fnc1;digital-link;supply-chain;retail</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/IsraelIyonsi/Gs1.NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <Deterministic>true</Deterministic>
+    <RootNamespace>Gs1</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+</Project>
